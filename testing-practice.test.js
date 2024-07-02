@@ -29,16 +29,19 @@ describe("caesarCipher", () => {
     // testCases array will multiple test cases for the caesarCipher function
     let testCases = [
       {
+        // tests wrap from z to a
         string: "xyz",
         shift: 3,
         expected: "abc",
       },
       {
+        // tests case preservation
         string: "HeLLo",
         shift: 3,
         expected: "KhOOr",
       },
       {
+        // tests punctuation
         string: "Hello, World!",
         shift: 3,
         expected: "Khoor, Zruog!",
